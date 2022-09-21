@@ -1,28 +1,33 @@
 package com.edsonfsousa.tavern.domain.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Setter
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class HeroRequestVO {
 
     @NotBlank
+    @NotNull
     @Size(min = 3, max = 60)
-    @Column(nullable = false, length = 20, unique = true)
     private String name;
 
     @NotBlank
-    @Size(min = 14)
-    @Column(nullable = false, length = 20, unique = true)
+    @NotNull
+    @Min(14)
     private Integer age;
 
     @NotBlank
+    @NotNull
     @Size(min = 3, max = 20)
-    @Column(nullable = false, length = 20, unique = true)
     private String skill;
 }
