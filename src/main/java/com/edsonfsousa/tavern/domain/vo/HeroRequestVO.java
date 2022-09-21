@@ -1,4 +1,4 @@
-package com.edsonfsousa.tavern.business.io;
+package com.edsonfsousa.tavern.domain.vo;
 
 import lombok.Getter;
 import lombok.Setter;

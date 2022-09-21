@@ -1,4 +1,4 @@
-package com.edsonfsousa.tavern.business.entity;
+package com.edsonfsousa.tavern.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
