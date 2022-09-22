@@ -1,6 +1,6 @@
-package com.edsonfsousa.tavern.domain.repository;
+package com.edsonfsousa.tavern.domain.repository.hero;
 
-import com.edsonfsousa.tavern.domain.entity.HeroEntity;
+import com.edsonfsousa.tavern.domain.entity.hero.HeroEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

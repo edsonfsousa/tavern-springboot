@@ -1,5 +1,6 @@
-package com.edsonfsousa.tavern.domain.entity;
+package com.edsonfsousa.tavern.domain.entity.hero;
 
+import com.edsonfsousa.tavern.domain.entity.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,7 +18,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @Entity
 @Table(name = "heroes")
-public class HeroEntity extends BaseEntity{
+public class HeroEntity extends BaseEntity {
 
     @NotBlank
     @Size(min = 3, max = 60)
